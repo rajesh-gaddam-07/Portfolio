@@ -41,24 +41,71 @@
 
         <!-- Main -->
         <div id="main">
+            <article class="post featured">
+                <header class="major">
+                    <h2>Understanding JavaScript Fundamentals</h2>
+                    <p>Get started with the basics of JavaScript</p>
+                </header>
+                <p>JavaScript (JS) operates as a synchronous, single-threaded language, executing code line by line. Each line of code executes sequentially, and the execution of the second line occurs only after the first one completes.</p>
+                <h3>Core Concepts of JavaScript</h3>
+                <p>Execution Context:</p>
+                <ul>
+                    <li>All JavaScript code operates within an execution context, comprising two components:</li>
+                    <li>Memory or Variable Environment: Stores variables or functions, such as `A: 10` or `function { ... }`.</li>
+                    <li>Code or Thread of Execution: Executes the code line by line.</li>
+                </ul>
+                <p>When the variable allocation and code execution phase completes within the execution context, the entire execution context is deleted or destroyed. All execution contexts are stored in the call stack, with each function invocation creating a new execution context within the global execution context.</p>
+                <h3>Working of Functions in JavaScript & Variable Environment</h3>
+                <p>Hoisting in JavaScript refers to the process where variable declarations and function declarations are moved to the top of their scope before code execution. This means that all declarations are processed before the code is executed.</p>
+                <p>For example:</p>
+                <pre><code>
+                        var x=1;
+                        a();
+                        b();
+                        console.log(x);
 
+                        function a(){
+                            var x = 10;
+                            console.log(x);
+                        }
+                        function b(){
+                            var x = 100;
+                            console.log(x);
+                        }
+                </code></pre>
+
+                <h3>Shortest JavaScript Program, window, and this Keywords</h3>
+                <p>In JavaScript, declaring a variable like var x = 10; assigns it the initial value of undefined before execution. This placeholder value is visible in the browser's scope before executing the program. If a variable is referenced before declaration, it results in an undefined output. However, accessing an undeclared variable leads to an error of "not defined." Remember, undefined is not empty; it serves as a placeholder value.</p>
+                <p>For example:</p>
+                <pre><code>
+                    console.log(x); // output undefined
+                    var x=10; // here before executing this line it will assign undefined for var x
+                    console.log(x);
+                    console.log(a); // here we get error as not defined
+
+                </code></pre>
+
+                <h3>JavaScript's Loosely Typed Nature</h3>
+                <p>JavaScript is a loosely typed or weakly typed language, allowing variables to be assigned any data type such as boolean, integer, or double. However, it's advisable not to assign undefined to any variable, as it's considered a poor practice.</p>               
+                    
+                <p>Stay tuned for more insights into JavaScript and its intricate workings in our upcoming blogs!</p>
+                <!-- Add more content here as needed -->
+            </article>
             <!-- Featured Post -->
-           
-
             <!-- Footer -->
             <!--<footer>
-                <div class="pagination">-->
+        <div class="pagination">-->
             <!--<a href="#" class="previous">Prev</a>-->
             <!--<a href="#" class="page active">1</a>
-                    <a href="#" class="page">2</a>
-                    <a href="#" class="page">3</a>
-                    <span class="extra">&hellip;</span>
-                    <a href="#" class="page">8</a>
-                    <a href="#" class="page">9</a>
-                    <a href="#" class="page">10</a>
-                    <a href="#" class="next">Next</a>
-                </div>
-            </footer>-->
+            <a href="#" class="page">2</a>
+            <a href="#" class="page">3</a>
+            <span class="extra">&hellip;</span>
+            <a href="#" class="page">8</a>
+            <a href="#" class="page">9</a>
+            <a href="#" class="page">10</a>
+            <a href="#" class="next">Next</a>
+        </div>
+    </footer>-->
 
         </div>
 
